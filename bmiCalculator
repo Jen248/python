@@ -1,0 +1,10 @@
+height = input("enter your height in m: ")
+weight = input("enter your weight in kg: ")
+
+print("Height is {} and weight is number is {}".format(height, weight))
+bmi = float(weight) / float(height) ** 2
+print("your BMI is {}".format(bmi))
+
+#now turn the BMI into a whole number
+bmi_as_int = int(bmi)
+print(bmi_as_int)
