@@ -1,0 +1,21 @@
+# Ask user for their current age
+age = input("What is your current age? ")
+
+#Bring in the age as an integer
+age_as_int = int(age)
+
+#Assume user will live to be 90yrs old
+#Subtract from current age
+years_remaining = 90 - age_as_int
+
+#Now calculate days
+days_remaining = years_remaining * 365
+
+#Weeks remaining in life 
+weeks_remaining = years_remaining * 52
+months_remaining = years_remaining * 12
+
+#Print you have x days, y months and z years left
+#use f instead of writing this all out
+message = f"You have {days_remaining} days, {weeks_remaining} weeks, and {months_remaining} months left"
+print(message)
